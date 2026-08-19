@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freshly baked eggless dates brownies, millet mini bites, and wholesome treats with zero preservatives or artificial colours. Order online for delivery across Chennai, Tamil Nadu, and Pan-India on pre-order.">
     
     <!-- Meta Pixel (Clean external loader) -->
     <script src="pixel.js" async></script>
@@ -10,7 +11,8 @@
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2113022532618494&ev=PageView&noscript=1" />
     </noscript>
 
-    <title>Golden Crumb Bakery | Millet Goodness</title>
+    <!-- SEO Optimized Title -->
+    <title>Golden Crumb Bakery | Eggless & Guilt-Free Millet Treats</title>
     
     <style>
         :root {
@@ -112,6 +114,64 @@
         .qty-btn:hover { background: var(--accent-gold); color: white; border-color: var(--accent-gold); }
         .qty-count { font-size: 1.1rem; font-weight: bold; min-width: 20px; text-align: center; }
 
+        /* FAQ Section Styles */
+        .faq-section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 12px;
+            border: 1px solid #EAE0D5;
+            box-shadow: var(--card-shadow);
+        }
+        .faq-section h2 {
+            text-align: center;
+            color: var(--text-dark);
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #EAE0D5;
+            padding-bottom: 1rem;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .faq-item details {
+            cursor: pointer;
+        }
+        .faq-item summary {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            list-style: none;
+            position: relative;
+            padding-right: 20px;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+        .faq-item details[open] summary::after {
+            content: '-';
+        }
+        .faq-item p {
+            margin-top: 10px;
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         /* Sticky Cart Bar */
         .cart-bar { 
             position: fixed; 
@@ -148,6 +208,29 @@
             font-size: 1rem;
         }
         .whatsapp-checkout-btn:hover { transform: scale(1.03); }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
 
         /* Feedback Button & Modal Styles */
         .feedback-trigger-btn {
@@ -235,8 +318,8 @@
                 </div>
                 <div class="promise-card">
                     <div class="promise-icon">🚫</div>
-                    <h3>Zero Preservatives</h3>
-                    <p>Real food has a shelf life. We never use artificial stabilizers or chemicals.</p>
+                    <h3>No Preservatives & Colours</h3>
+                    <p>Real food has a natural shelf life and color. We never use artificial stabilizers, chemicals, or synthetic food colors.</p>
                 </div>
                 <div class="promise-card">
                     <div class="promise-icon">🍯</div>
@@ -250,6 +333,39 @@
         
         <!-- JavaScript renders products here dynamically -->
         <div class="products-grid" id="product-list"></div>
+
+        <!-- SEO FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <details>
+                    <summary>Are your millet cookies and snacks good for kids?</summary>
+                    <p>Absolutely! Our <strong>millet mini bites</strong> and <strong>healthy muffins for kids</strong> are the perfect after-school snack. We use 100% traditional millets and no refined sugar, making them the ultimate choice for guilt-free snacking.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>Do you use eggs, maida, artificial colours, or preservatives?</summary>
+                    <p>Never. Our core promise is <strong>100% eggless, no maida, no artificial colours, and no preservatives</strong>. Every <strong>millet brownie</strong> and cookie is baked fresh using natural ingredients and naturally sweetened alternatives, completely free from commercial lab chemicals.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>Where do you deliver your healthy bakery items?</summary>
+                    <p>We bake fresh in our <strong>Manapakkam</strong> kitchen and offer delivery <strong>across Chennai and Tamil Nadu</strong>. We also accept <strong>Pan-India pre-orders</strong>! You can easily buy our eggless, healthy cookies online and get fresh baked guilt-free treats delivered directly to your doorstep.</p>
+                </details>
+            </div>
+
+            <div class="faq-item">
+                <details>
+                    <summary>How long do the millet brownies and treats stay fresh?</summary>
+                    <p>Because we proudly bake <strong>preservative free cookies</strong>, real food has a natural shelf life. We recommend enjoying your healthy millet snacks within 3 to 4 days of delivery for the best taste and texture.</p>
+                </details>
+            </div>
+        </section>
 
         <!-- Button to open Feedback Modal -->
         <button class="feedback-trigger-btn" onclick="openFeedback()">Leave a Review</button>
@@ -278,6 +394,14 @@
         <button class="whatsapp-checkout-btn" id="whatsappCheckout">Order via WhatsApp</button>
     </div>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919789799377?text=Hi%20Golden%20Crumb!%20I%20have%20a%20question%20about%20your%20menu." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with us on WhatsApp" style="width: 35px; height: 35px;">
+    </a>
+
     <footer>
         <p>&copy; 2026 Golden Crumb. Proudly baked in Chennai.</p>
     </footer>
@@ -296,5 +420,41 @@
         }
     </script>
 
+    <!-- Google SEO Hidden FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Are your millet cookies and snacks good for kids?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our millet mini bites and healthy muffins for kids are the perfect after-school snack. We use 100% traditional millets and no refined sugar, making them the ultimate choice for guilt-free snacking."
+        }
+      },{
+        "@type": "Question",
+        "name": "Do you use eggs, maida, artificial colours, or preservatives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Never. Our core promise is 100% eggless, no maida, no artificial colours, and no preservatives. Every millet brownie and cookie is baked fresh using natural ingredients and naturally sweetened alternatives, completely free from commercial lab chemicals."
+        }
+      },{
+        "@type": "Question",
+        "name": "Where do you deliver your healthy bakery items?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We bake fresh in our Manapakkam kitchen and offer delivery across Chennai and Tamil Nadu. We also accept Pan-India pre-orders! You can easily buy our eggless, healthy cookies online and get fresh baked guilt-free treats delivered directly to your doorstep."
+        }
+      },{
+        "@type": "Question",
+        "name": "How long do the millet brownies and treats stay fresh?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because we proudly bake preservative free cookies, real food has a natural shelf life. We recommend enjoying your healthy millet snacks within 3 to 4 days of delivery for the best taste and texture."
+        }
+      }]
+    }
+    </script>
 </body>
 </html>
